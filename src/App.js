@@ -3,6 +3,8 @@ import Home from "./pages/Home/Home";
 import Header from "./components/Header/Header";
 import FicheLogement from "./pages/FicheLogement/FicheLogement";
 import Footer from "./components/Footer/Footer";
+import Error from "./pages/Error/Error.jsx";
+	
 
 function App() {
 	return (
@@ -12,6 +14,8 @@ function App() {
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/logement/:id" element={<FicheLogement />} />
+					<Route path="*" element={<Error />} />
+
 				</Routes>
 			</main>
 			<Footer />
