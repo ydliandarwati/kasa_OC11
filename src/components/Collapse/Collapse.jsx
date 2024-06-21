@@ -2,22 +2,22 @@ import { useState, useRef, useEffect } from "react"; //import des hooks de base 
 import Chevron from "../../assets/images/vectorBas.svg";
 
 export default function Collapse(props) {
-	const [toggle, setToggle] = useState(false); // je definis le state du toggle (et false par défaut)
-	const [heightEl, setHeightEl] = useState(); // je definis le state de la hauteur du collapse
+	const [toggle, setToggle] = useState(false); // toggle state (false by default)
+	const [heightEl, setHeightEl] = useState(); // collapse hight
 
 	const toggleState = () => {
-		//je définis la fonction toggleState qui modifie la valeur toggle au clic
+		// change the value of toggle after click
 		setToggle(!toggle);
 	};
 
-	const refHeight = useRef(); //récupère et conserve la valeur de hauteur du collapse déplié
+	const refHeight = useRef(); // hight of collapse
 
 	useEffect(() => {
-		setHeightEl(`${refHeight.current.scrollHeight}px`); //useEffect s'éxécute au montage du composant, dans ce cas, il définit la hauteur du collapse déplié lors de sa première ouverture et la conserve dans refHeight
+		setHeightEl(`${refHeight.current.scrollHeight}px`);
 	}, []);
 
 	return (
-		// affiche le collapse replié par défaut et l'ouvre au clic puis le referme au clic en faisant disparaitre le texte et le style
+		// open/close the collapce by click
 		<div className={`collapse ${props.aboutStyle}`}>
 			<div onClick={toggleState} className="collapse__visible">
 				<h2>{props.aboutTitle}</h2>
