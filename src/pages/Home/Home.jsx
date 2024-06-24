@@ -2,14 +2,17 @@ import { useEffect, useState } from "react";
 import Banner from "../../components/Banner/Banner";
 import Card from "../../components/Cards/Card";
 import { Link } from "react-router-dom";
-import axios from "axios";
 
 export default function Home() {
 	const [data, setData] = useState([]);
 
 	useEffect(() => {
-		axios.get("/logements.json").then((res) => setData(res.data)); 
-	}, []);
+		const getData = async () => {
+			const res = await fetch("/logements.json").then(r => r.json())  ;
+			setData(res);
+		};
+		getData();
+	});
 
 	return (
 		<>

@@ -5,7 +5,6 @@ import Collapse from "../../components/Collapse/Collapse";
 import Host from "../../components/Host/Host";
 import Rate from "../../components/Rate/Rate";
 import Tag from "../../components/Tag/Tag";
-import axios from "axios";
 
 export default function FicheLogement() {
 	const params = useParams();
@@ -14,9 +13,10 @@ export default function FicheLogement() {
 	const [pickedAppart, setPickedAppart] = useState();
 	useEffect(() => {
 		const getData = async () => {
-			const res = await axios.get("/logements.json"); 
-			const picked = res.data.find(({ id }) => id === params.id);
-			res.data.map(() => setPickedAppart(picked));
+
+			const res = await fetch("/logements.json").then(r => r.json())  ;
+			const picked = res.find(({ id }) => id === params.id);
+			res.map(() => setPickedAppart(picked));
 			if (picked === undefined) {
 				navigate("/404", { state: { message: "Can't get data" } }); 
 				// go to page 404 and invalid announce

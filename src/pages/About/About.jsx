@@ -1,12 +1,12 @@
 import AboutBanner from "../../components/AboutBanner/AboutBanner";
 import Collapse from "../../components/Collapse/Collapse";
-import aboutArray from "../../datas/aboutArray.json"; // j'ai créé un fichier JSON avec les données des collapses
+import about from "../../data/about.json"; // j'ai créé un fichier JSON avec les données des collapses
 
 export default function About() {
 	return (
 		<>
 			<AboutBanner />
-			{aboutArray.map((rule, id) => (
+			{about.map((rule, id) => (
 				<Collapse
 					key={id}
 					aboutTitle={rule.aboutTitle}
