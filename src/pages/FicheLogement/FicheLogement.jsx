@@ -18,7 +18,8 @@ export default function FicheLogement() {
 			const picked = res.data.find(({ id }) => id === params.id);
 			res.data.map(() => setPickedAppart(picked));
 			if (picked === undefined) {
-				navigate("/404", { state: { message: "Can't get data" } }); //renvoi vers la page 404 en cas d'URL de logement invalide
+				navigate("/404", { state: { message: "Can't get data" } }); 
+				// go to page 404 and invalid announce
 			}
 		};
 		getData();

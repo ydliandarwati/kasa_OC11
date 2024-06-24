@@ -4,7 +4,8 @@ import Header from "./components/Header/Header";
 import FicheLogement from "./pages/FicheLogement/FicheLogement";
 import Footer from "./components/Footer/Footer";
 import Error from "./pages/Error/Error.jsx";
-	
+import About from "./pages/About/About";
+
 
 function App() {
 	return (
@@ -15,6 +16,7 @@ function App() {
 					<Route path="/" element={<Home />} />
 					<Route path="/logement/:id" element={<FicheLogement />} />
 					<Route path="*" element={<Error />} />
+					<Route path="/about" element={<About />} />
 
 				</Routes>
 			</main>
