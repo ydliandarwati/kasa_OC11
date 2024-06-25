@@ -1,3 +1,5 @@
+// we import two type of stars (empty and full) and we add them based on input rate
+
 import emptyStar from "../../assets/images/emptyStar.svg";
 import fullStar from "../../assets/images/star-rate.svg";
 

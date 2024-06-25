@@ -8,7 +8,7 @@ export default function Home() {
 
 	useEffect(() => {
 		const getData = async () => {
-			const res = await fetch("/logements.json").then(r => r.json())  ;
+			const res = await fetch("/logements.json").then(r => r.json());
 			setData(res);
 		};
 		getData();
@@ -20,7 +20,7 @@ export default function Home() {
 			<div className="cards-container">
 				{data.map((appart, id) => (
 					<div className="card_logement" key={id}>
-						<Link className="link_card_logement" to={`/logement/${appart.id}`}>
+						<Link className="cards_link" to={`/logement/${appart.id}`}>
 							<Card cover={appart.cover} title={appart.title} />
 						</Link>
 					</div>

@@ -1,10 +1,10 @@
 export default function Card({ cover, title }) {
-	 // announce cards
+	 // announce cards containing image and title
 	return (
-		<article className="card-logement">
+		<article className="cards-logement">
 			<img src={cover} alt="location" />
-			<div className="card-logement__layer">
-				<p className="card-logement__title">{title}</p>
+			<div className="cards-logement__layer">
+				<p className="cards-logement__title">{title}</p>
 			</div>
 		</article>
 	);

@@ -1,4 +1,5 @@
-//la bannière about est une image et un calque assombrissant qui varient selon le responsive
+// about image, which is slightly different for mobile and desktop version
+// handled via classname aboutBackground
 export default function AboutBanner() {
 	return <div className="aboutBackground wh-msk"></div>;
 }
