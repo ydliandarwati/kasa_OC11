@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react"; //import des hooks de base react
-import Chevron from "../../assets/images/vectorBas.svg";
+import Chevron from "../../assets/images/arrow-down.svg";
 
 export default function Collapse(props) {
 	const [toggle, setToggle] = useState(false); // toggle state (false by default)

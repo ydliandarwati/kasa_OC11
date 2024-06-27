@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import Banner from "../../components/Banner/Banner";
-import Card from "../../components/Cards/Card";
+import Banner from "../components/Banner/Banner";
+import Card from "../components/Cards/Card";
 import { Link } from "react-router-dom";
 
 export default function Home() {

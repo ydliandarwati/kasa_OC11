@@ -1,3 +1,4 @@
+// create card from image + title
 export default function Card({ cover, title }) {
 	 // announce cards containing image and title
 	return (

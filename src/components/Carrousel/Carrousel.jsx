@@ -1,6 +1,6 @@
 import { useState } from "react";
-import left from "../../assets/images/vector-left.svg";
-import right from "../../assets/images/vector-right.svg";
+import left from "../../assets/images/arrow-left.svg";
+import right from "../../assets/images/arrow-right.svg";
 
 export default function Carrousel({ slides }) {
 	const [current, setCurrent] = useState(0); // index of first slide as 0
@@ -18,7 +18,7 @@ export default function Carrousel({ slides }) {
 			{length > 1 && (// show only for lenght > 1
 				<img
 					src={left} 
-					alt="gauche"
+					alt="left"
 					onClick={prevSlide}
 					className="leftArrow"
 				/>
@@ -26,21 +26,21 @@ export default function Carrousel({ slides }) {
 			{length > 1 && (
 				<img
 					src={right}
-					alt="droite"
+					alt="right"
 					onClick={nextSlide}
 					className="rightArrow"
 				/>
 			)}
 			{slides.map((slide, index) => (
 				<div
-					key={index} // define  slider 
+					key={index} // define slider 
 					className={
 						current === index
 							? "slider bl-msk wh-msk active-anim"
 							: "slider bl-msk wh-msk"
 					}
 				>
-					{index === current && <img src={slide} alt="appartement à louer" />}
+					{index === current && <img src={slide} alt="apartment to rent" />}
 					{index === current && (
 						<span className="slider__number">
 							{current + 1}/{length}
