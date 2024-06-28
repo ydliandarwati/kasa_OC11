@@ -43,9 +43,9 @@
 			padding: 22px 15px;
 			pointer-events: none;
 			@include font(12px, 400);
-
+			color: black;
 			@media screen and (min-width: $breakpoint-desktop) {
-				@include font(24px, 400);
+				@include font(14px, 400);
 			}
 		}
 	}
