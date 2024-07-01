@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/ydliandarwati/kasa_OC11/static/css/main.df427804.css",
+    "main.js": "/ydliandarwati/kasa_OC11/static/js/main.c057ecd9.js",
+    "static/media/about-background.png": "/ydliandarwati/kasa_OC11/static/media/about-background.ed819f2cc2faefb4fba2.png",
+    "static/media/background-banner.png": "/ydliandarwati/kasa_OC11/static/media/background-banner.40371f11171ba050e175.png",
+    "static/media/mobile-about-background.png": "/ydliandarwati/kasa_OC11/static/media/mobile-about-background.bbe4700f902ea762731a.png",
+    "static/media/LOGO.svg": "/ydliandarwati/kasa_OC11/static/media/LOGO.759702e80d2cca5e6d54b41ca6682c02.svg",
+    "static/media/logo-footer.svg": "/ydliandarwati/kasa_OC11/static/media/logo-footer.ee689fd9409d1b5a898b4247819d8a00.svg",
+    "index.html": "/ydliandarwati/kasa_OC11/index.html",
+    "static/media/arrow-down.svg": "/ydliandarwati/kasa_OC11/static/media/arrow-down.700e8f932eaf3280397f0bc0ae51228b.svg",
+    "static/media/arrow-right.svg": "/ydliandarwati/kasa_OC11/static/media/arrow-right.88153a5d119c2744ffe34dca1ef843df.svg",
+    "static/media/arrow-left.svg": "/ydliandarwati/kasa_OC11/static/media/arrow-left.19918a1634b1441a25ae0b50e6b1f85b.svg",
+    "static/media/emptyStar.svg": "/ydliandarwati/kasa_OC11/static/media/emptyStar.7e4ba6032d7d80ecc30aa389973cef95.svg",
+    "static/media/star-rate.svg": "/ydliandarwati/kasa_OC11/static/media/star-rate.6430150c126a3adf92c132c52c9c7428.svg",
+    "main.df427804.css.map": "/ydliandarwati/kasa_OC11/static/css/main.df427804.css.map",
+    "main.c057ecd9.js.map": "/ydliandarwati/kasa_OC11/static/js/main.c057ecd9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.df427804.css",
+    "static/js/main.c057ecd9.js"
+  ]
+}
