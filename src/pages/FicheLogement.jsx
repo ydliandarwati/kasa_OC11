@@ -5,6 +5,8 @@ import Collapse from "../components/Collapse/Collapse";
 import Host from "../components/Host/Host";
 import Rate from "../components/Rate/Rate";
 import Tag from "../components/Tag/Tag";
+import logements from "../data/logements.json";
+
 
 export default function FicheLogement() {
 	const params = useParams();
@@ -14,7 +16,8 @@ export default function FicheLogement() {
 	useEffect(() => {
 		const getData = async () => {
 
-			const res = await fetch("/logements.json").then(r => r.json())  ;
+			// const res = await fetch("/logements.json").then(r => r.json()) ;
+			const res = logements;
 			const picked = res.find(({ id }) => id === params.id);
 			res.map(() => setPickedAppart(picked));
 			if (picked === undefined) {
