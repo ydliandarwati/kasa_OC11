@@ -44,8 +44,8 @@
 
     &__number {
         display: none;
-
-        @media screen and (min-width: $breakpoint-desktop) {
+		// and (min-width: $breakpoint-desktop)
+        @media screen {
             display: block;
             position: absolute;
             @include font(18px, 500);
