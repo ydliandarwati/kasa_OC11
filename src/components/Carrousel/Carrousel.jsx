@@ -47,7 +47,7 @@ export default function Carrousel({ slides }) {
 				>
 					{/* add the relevant slide to return + slide number */}
 					{index === current && <img src={slide} alt="apartment to rent" />}
-					{index === current && (
+					{index === current && length > 1 && (
 						<span className="slider__number">
 							{current + 1}/{length}
 						</span>
